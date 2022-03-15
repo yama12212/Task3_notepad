@@ -1,0 +1,239 @@
+@media screen and (max-width:1080px){
+ .Header{
+  background-color: #fff;
+  z-index: 10;
+ }
+ 
+ /*Humberger Menu Layout*/
+ .DrawerHidden{
+  display: none;
+ }
+ 
+ .DrawerOpen{
+  cursor: pointer;
+  display: block;
+  position:relative;
+  width: 30px;
+  height: 21px;
+  z-index: 100;
+ }
+ 
+ .DrawerOpen>span,.DrawerOpen>span:before,.DrawerOpen>span:after{
+  content: "";
+  top: 50%;
+  display: block;
+  position: absolute;
+  background-color: #000;
+  border-radius: 10px;
+  width: 100%;
+  height: 3px;
+  transform: translate(0,-50%);
+  transition: top 0.2s, transform 0.2s, opacity 0.3s;
+ }
+ 
+ .DrawerOpen>span:before{
+  top: -8px;
+ }
+ 
+ .DrawerOpen>span:after{
+  top: 12px;
+ }
+ 
+ #HeaderNavHumberger:checked~.DrawerOpen>span{
+  background-color: rgba(255,255,255,0);
+ }
+ 
+ #HeaderNavHumberger:checked~.DrawerOpen>span:before{
+  top: 0px;
+  transform: rotate(-45deg);
+ }
+ 
+ #HeaderNavHumberger:checked~.DrawerOpen>span:after{
+  top: 0px;
+  transform: rotate(45deg);
+ }
+
+ #HeaderNavHumberger:checked~.HeaderMenuPage{
+  transform: translate(-100%,0);
+ }
+
+ 
+ /*Header Menu Layout*/
+ .Header{
+  position: fixed!important;
+ }
+ 
+ .HeaderMenuPage{
+  overflow-y: scroll;
+  position: fixed;
+  top: 60px;
+  left: 100%;
+  width: 100%;
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 75px;
+  transition: transform 0.5s;
+  z-index: 99;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8)
+ }
+ 
+ .HeaderMenuList{
+  margin-right: 0;
+ }
+ 
+ .HeaderMenuPage_Link{
+  padding: 20px 0;
+ }
+ 
+ .HeaderMenuPage_Link>span:first-of-type{
+  font-size: 16px;
+  color: #fff;
+  letter-spacing: 5px
+ }
+ 
+ .HeaderMenuPage_Link>span:last-of-type{
+  font-size: 12px;
+  margin-top: 10px;
+  color: #F79214;
+  letter-spacing: 2px;
+ }
+ 
+ .HeaderMenuList:last-of-type{
+  margin-top: 20px;
+ }
+ 
+ .HeaderMenuPage_Btn{
+  height: 60px;
+  width: 250px;
+  margin: 0 auto;
+ }
+ 
+ .HeaderMenuPage_Btn>span{
+  padding-left: 32px;
+  font-size: 16px;
+ }
+ 
+ main{
+  padding-top: 60px;
+ }
+ 
+}
+
+
+
+@media screen and (max-width:1024px){
+ .AboutContainer{
+  flex-direction: column;
+ } 
+ 
+ .AboutTitle{
+  width: 100%;
+ }
+ 
+ .AboutBtn{
+  margin-top: 40px;
+ }
+ 
+}
+
+
+
+@media screen and (max-width:767px){
+ .HeaderLogo-pc{
+  display: none;
+ }
+ 
+ .HeaderLogo-sp{
+  display: block;
+ }
+ 
+ .HeaderContainer{
+  margin: 0 20px;
+ }
+ 
+ .FirstView{
+  background-image: none;
+  padding-top: 0;
+  padding-bottom: 35px;
+ } 
+ 
+ .FirstView-Image-sp{
+  display: block;
+ }
+ 
+ .FirstViewContainer{
+  margin-top: -45vw;
+  max-width: none;
+  padding: 0 20px;
+ }
+ 
+ .FirstViewShow{
+  width: 100%;
+  margin-bottom: 20px;
+ }
+ 
+ .FirstViewTitle{
+  font-size: 25px;
+  line-height: 36px;
+  margin-right: calc(((100vw-100%)/2)*-1);
+  margin-left: calc(((100vw-100%)/2)*-1);
+ }
+ 
+ .FirstViewImage{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+ }
+ 
+ .FirstViewImage>img{
+  width: 27.5%;
+ }
+ 
+ .FirstViewBtn{
+  flex-direction: column;
+ }
+ 
+ .FirstViewBtn>a{
+  font-size: 14px;
+  width: 100%!important;
+ }
+ 
+ .FirstViewBtn>a:first-of-type{
+  margin-right: 0;
+  margin-bottom: 10px;
+ }
+ 
+ .FirstViewBtn>a:last-of-type{
+  height: 45px;
+ }
+ 
+ /*About Layout*/
+ .About{
+  padding: 30px 0;
+ }
+ 
+ .AboutContainer{
+  padding: 0 30px;
+ }
+ 
+ .AboutTitle{
+  margin-bottom: 0;
+ }
+ 
+ .AboutTitle>h2{
+  font-size: 30px!important;
+  line-height: 1.2;
+  text-align: center;
+ }
+ 
+ .AboutTitle>h2>span{
+  font-size: 30px;
+  letter-spacing: 1px;
+ }
+ 
+ .AboutTitle>h2>br{
+  display: block;
+ }
+ 
+}
