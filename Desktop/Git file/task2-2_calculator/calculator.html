@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>calculator</title>
+  <link rel="stylesheet" href="calculator.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ </head>
+
+ <body>
+	 <div class="calculator">
+		<p id="totalAnswerView">0</p>
+		<div class="calculatorBtns">
+			<div class="columnfirst">
+				<button id="Btn7" onclick="clickNumber(this)">7</button>
+				<button id="Btn8" onclick="clickNumber(this)">8</button>
+				<button id="Btn9" onclick="clickNumber(this)">9</button>
+				<button id="BtnAdd" onclick="clickSymbol(this)">+</button>
+			</div>
+			<div class="columnsecond">
+				<button id="Btn4" onclick="clickNumber(this)">4</button>
+				<button id="Btn5" onclick="clickNumber(this)">5</button>
+				<button id="Btn6" onclick="clickNumber(this)">6</button>
+				<button id="BtnSub" onclick="clickSymbol(this)">-</button>
+			</div>
+			<div class="columnthird">
+				<button id="Btn1" onclick="clickNumber(this)">1</button>
+				<button id="Btn2" onclick="clickNumber(this)">2</button>
+				<button id="Btn3" onclick="clickNumber(this)">3</button>
+				<button id="BtnMul" onclick="clickSymbol(this)">*</button>
+			</div>
+			<div class="columnsecond">
+				<button id="Btn0" onclick="clickZero(this)">0</button>
+				<button id="Btn00" onclick="clickDbZero(this)">00</button>
+				<button id="BtnColon" onclick="clickColon(this)">.</button>
+				<button id="BtnDiv" onclick="clickSymbol(this)">/</button>
+			</div>
+			<div class="columnfourth">
+				<button id="BtnAC" onclick="clearValue(this)">AC</button>
+				<button id="BtnEq" onclick="totalValue(this)">=</button>
+			</div>
+		</div>
+
+	 </div>
+	<script src="calculator-2-addDecimal.js"></script>
+ </body>
+<html>
